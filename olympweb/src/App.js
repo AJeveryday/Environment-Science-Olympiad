@@ -1,10 +1,16 @@
+import { Routes, Route } from "react-router-dom"
+import Signup from "./Signup"
+import Home from "./Home"
+
 function App() {
   return (
     <div className="App">
-      <h1> Olympiad website</h1>
-      <h2>ong</h2>
+      <Routes>
+        <Route path="/h" element={ <Home/> } />
+        <Route path="/signup" element={<Signup />}/>
+      </Routes>
     </div>
-  );
+  )
 }
 
 export default App;
